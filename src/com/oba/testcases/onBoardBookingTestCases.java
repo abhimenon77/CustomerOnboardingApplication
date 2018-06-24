@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -18,12 +19,14 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.oba.testbase.TestBase;
 import com.oba.utilities.EMailTestResults;
 import com.oba.utilities.ExtentReportLibrary;
 
-public class ExtentReportTest {
+public class onBoardBookingTestCases extends TestBase {
 	ExtentReportLibrary ExtRep;
-	public static String reportName;
+	
+	public static WebDriver captureScreen;
 
 	@BeforeTest
 	public void setupExtentReports() throws Exception {
@@ -40,6 +43,7 @@ public class ExtentReportTest {
 	
 	@AfterMethod
 	public void captureStatus(ITestResult result) {
+		captureScreen = driver;
 		ExtRep.captureStatus(result);
 	}
 	
@@ -50,8 +54,7 @@ public class ExtentReportTest {
 	
 	@AfterSuite
 	public void afterSuite() throws Exception {
-		System.out.println("Inside @AfterSuite, Emailed Report " + reportName);
-		EMailTestResults.emailResults(reportName);
+		
 
 	}
 	

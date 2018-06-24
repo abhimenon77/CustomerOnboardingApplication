@@ -60,7 +60,7 @@ public class EMailTestResults {
  
 					protected PasswordAuthentication getPasswordAuthentication() {
  
-					return new PasswordAuthentication("manav.menon.chengalath@gmail.com", "Krishna9239");
+					return new PasswordAuthentication("GiveYourGMailID@gmail.com", "YourPassword");
  
 					}
  
@@ -72,7 +72,7 @@ public class EMailTestResults {
 			Message message = new MimeMessage(session);
  
 			// Set the from address
-			message.setFrom(new InternetAddress("manav.menon.chengalath@gmail.com"));
+			message.setFrom(new InternetAddress("GiveYourGMailID@gmail.com"));
 			
 			getEmailDetails();
  

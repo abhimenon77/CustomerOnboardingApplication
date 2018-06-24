@@ -1,6 +1,7 @@
 package com.oba.utilities;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -23,6 +24,11 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+import org.apache.commons.io.FileUtils;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -35,7 +41,10 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.oba.testcases.onBoardBookingTestCases;
 import com.oba.utilities.*;
+
+
 
 public class ExtentReportLibrary {
 	
@@ -81,10 +90,32 @@ public class ExtentReportLibrary {
 			testInfo.log(Status.PASS, "The Test Method Name is " + result.getName() + " PASSED.");
 		}else if(result.getStatus() == ITestResult.FAILURE){
 			testInfo.log(Status.FAIL, "The Test Method Name is " + result.getName() + " FAILED.");
+			captureScreenShot(onBoardBookingTestCases.captureScreen, result.getName());
 			testInfo.log(Status.FAIL, "Test Failure... " + result.getThrowable());
 		}else if(result.getStatus() == ITestResult.SKIP){
 			testInfo.log(Status.FAIL, "The Test Method Name is " + result.getName() + " SKIPPED.");
 			testInfo.log(Status.FAIL, "Test Failure... " + result.getThrowable());
+		}
+	}
+	
+	
+	//This method is for capturing the screenshot of the Failed Test
+	public void captureScreenShot(WebDriver driver, String testCaseName) {
+		File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		
+		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+		try {
+			timeStamp = GeneralUtilities.tokenizeTime(timeStamp);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		String currentDir = System.getProperty("user.dir" + "/TestReport/");
+		String outputFileName = currentDir + testCaseName + "_FAILED_"+ timeStamp + ".jpg";
+		try {
+			FileUtils.copyFile(screenshot, new File(outputFileName));
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 	

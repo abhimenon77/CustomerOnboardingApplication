@@ -40,6 +40,7 @@ public class TestBase {
 	public static WebDriverWait wait;
 	public static com.oba.utilities.ExtentReportLibrary ExtRep;
 	public static String browser;
+	public static String reportName;
 /*	
 	public static ExtentReportLibrary reports;
 	public static ExtentTest test;
@@ -92,11 +93,18 @@ public class TestBase {
 
 	@AfterSuite
 	public void tearDown() {
-
+		System.out.println("Inside @AfterSuie, Emailed Report " + reportName);
+		try {
+			EMailTestResults.emailResults(reportName);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		log.info("Test Results has been emailed to the intended recipients...");
+		
 		if (driver != null) {
 			driver.quit();
 		}
-		log.debug("test execution completed !!!");
+		log.debug("Test execution completed !!!");
 	}
 }
 	
