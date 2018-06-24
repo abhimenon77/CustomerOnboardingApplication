@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Facebook LoginPage]" parallel="tests">
+  <test name="Login with a Valid UserName and Valid Password(failed)" parallel="tests">
+    <parameter name="userPassword" value="SeleniumTest123"/>
+    <parameter name="userName" value="penTest.Abhi.1"/>
+    <classes>
+      <class name="com.facebook.TestCases.loginToFaceBook">
+        <methods>
+          <include name="loginWithValidUserName" invocation-numbers="0"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.facebook.TestCases.loginToFaceBook -->
+    </classes>
+  </test> <!-- Login with a Valid UserName and Valid Password(failed) -->
+</suite> <!-- Failed suite [Facebook LoginPage] -->

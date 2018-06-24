@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Facebook LoginPage" parallel="tests" thread-count="1">
+  <test name="Login with a Valid UserName and Valid Password">
+    <parameter name="userName" value="penTest.Abhi.1" />
+    <parameter name="userPassword" value="SeleniumTest123" />
+    <classes>
+      <class name="com.facebook.TestCases.loginToFaceBook">
+		<methods>
+			<include name="loginWithValidUserName" />
+		</methods>
+	  </class>
+    </classes>
+  </test>
+</suite>
