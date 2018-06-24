@@ -39,15 +39,15 @@ import com.oba.utilities.*;
 
 public class ExtentReportLibrary {
 	
-	static ExtentReports reports;
-	static ExtentTest test;
+	public static ExtentReports reports;
+	public static ExtentTest test;
 	public static ExtentTest testInfo;
-	static ExtentHtmlReporter htmlReporter;
+	public static ExtentHtmlReporter htmlReporter;
 	
 	
 	public String setupExtentReports(String ReportName) throws Exception {
 		String currentDir = System.getProperty("user.dir");
-		String configDir = currentDir;
+		String configDir = currentDir + "/resources/Configuration";
 		System.out.println("Directory is " + currentDir);
 		
 		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
@@ -91,8 +91,5 @@ public class ExtentReportLibrary {
 	public void cleanUp() {
 		reports.flush();
 	}
-	
-	
 
- 
 }

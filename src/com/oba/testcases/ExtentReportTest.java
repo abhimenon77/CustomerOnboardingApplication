@@ -60,15 +60,9 @@ public class ExtentReportTest {
 	public void testOne() throws Exception {
 		System.out.println("Inside Test");
 		Assert.assertTrue(true);
-	}
-	
-/*
-	@Test
-	public void testOne() {
-		Assert.assertTrue(true);
 		ExtRep.testInfo.log(Status.INFO, "This is a Sample Test One.");
 	}
-	
+
 	
 	
 	@Test
@@ -76,7 +70,6 @@ public class ExtentReportTest {
 		Assert.assertTrue(false);
 		ExtRep.testInfo.log(Status.INFO, "This is a Sample Test Two.");
 	}
-	*/
 	
 	
 	@Test
@@ -84,5 +77,13 @@ public class ExtentReportTest {
 		Assert.assertTrue(true);
 		ExtRep.testInfo.log(Status.INFO, "This is a Sample Test Three.");
 	}
+	
+	
+	@Test
+	public void testFour() {
+		Assert.assertTrue(true);
+		ExtRep.testInfo.log(Status.INFO, "This is a Sample Test Four.");
+	}
+	
 	
 }
