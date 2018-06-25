@@ -93,11 +93,11 @@ public class TestBase {
 		driver.manage().window().maximize();
 //		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, 5);
-		loginToApp();
+		
 	}
 
 	
-	public void loginToApp() {
+	public static void loginToApp() {
 		String currentDir = System.getProperty("user.dir");
 		String fileName = currentDir + "\\resources\\properties\\loginPage.properties";
 		System.out.println("fileName Details -> " + fileName);

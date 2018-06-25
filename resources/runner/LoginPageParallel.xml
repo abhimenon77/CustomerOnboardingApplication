@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LoginPage" parallel="tests" thread-count="2">
+  <test name="Login with a Valid UserName and Valid Password">
+    <parameter name="userName" value="abhi_menon@yahoo.com" />
+    <parameter name="userPassword" value="CustomerOnboard2018" />
+    <classes>
+      <class name="com.oba.testcases.onBoardBookingTestCases">
+		<methods>
+			<include name="loginWithValidUserName" />
+		</methods>
+	  </class>
+    </classes>
+  </test>
+  
+  <test name="Login with a Valid UserName and Valid Password_1">
+    <parameter name="userName" value="abhi_menon@yahoo.com" />
+    <parameter name="userPassword" value="CustomerOnboard2018" />
+    <classes>
+      <class name="com.oba.testcases.onBoardBookingTestCases">
+		<methods>
+			<include name="loginWithValidUserName" />
+		</methods>
+	  </class>
+    </classes>
+  </test>
+  
+</suite>

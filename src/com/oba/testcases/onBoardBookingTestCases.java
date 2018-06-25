@@ -1,5 +1,7 @@
 package com.oba.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -65,9 +67,10 @@ public class onBoardBookingTestCases extends TestBase {
 	
 	
 	@Test
-	public void Login() throws Exception {
+	public void loginWithValidUserName() throws Exception {
 		System.out.println("Inside Test");
-		Assert.assertTrue(true);
+		loginToApp();
+		AssertJUnit.assertTrue(true);
 		ExtRep.testInfo.log(Status.INFO, "This is a Sample Test One.");
 	}
 
