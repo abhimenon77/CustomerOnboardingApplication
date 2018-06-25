@@ -1,77 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1210" started-at="2018-06-08T18:44:08Z" finished-at="2018-06-08T18:44:10Z">
+  <suite name="Default suite" duration-ms="852" started-at="2018-06-25T02:10:26Z" finished-at="2018-06-25T02:10:27Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1210" started-at="2018-06-08T18:44:08Z" finished-at="2018-06-08T18:44:10Z">
-      <class name="com.facebook.features.ExtentReportTest">
-        <test-method status="PASS" signature="setupExtentReports()[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="setupExtentReports" is-config="true" duration-ms="560" started-at="2018-06-09T00:14:08Z" finished-at="2018-06-09T00:14:09Z">
+    <test name="Default test" duration-ms="852" started-at="2018-06-25T02:10:26Z" finished-at="2018-06-25T02:10:27Z">
+      <class name="com.oba.testcases.onBoardBookingTestCases">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb]" name="setUp" is-config="true" duration-ms="15907" started-at="2018-06-25T02:10:10Z" finished-at="2018-06-25T02:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setupExtentReports()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb]" name="setupExtentReports" is-config="true" duration-ms="185" started-at="2018-06-25T02:10:26Z" finished-at="2018-06-25T02:10:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtentReports -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="register" is-config="true" duration-ms="5" started-at="2018-06-09T00:14:09Z" finished-at="2018-06-09T00:14:09Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb]" name="register" is-config="true" duration-ms="9" started-at="2018-06-25T02:10:26Z" finished-at="2018-06-25T02:10:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.facebook.features.ExtentReportTest.testOne() throws java.lang.Exception]]>
+                <![CDATA[public void com.oba.testcases.onBoardBookingTestCases.Login() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="testOne()[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="testOne" duration-ms="5" started-at="2018-06-09T00:14:09Z" finished-at="2018-06-09T00:14:09Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb]" name="Login" duration-ms="18" started-at="2018-06-25T02:10:26Z" finished-at="2018-06-25T02:10:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="captureStatus" is-config="true" duration-ms="20" started-at="2018-06-09T00:14:09Z" finished-at="2018-06-09T00:14:09Z">
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb]" name="captureStatus" is-config="true" duration-ms="0" started-at="2018-06-25T02:10:26Z" finished-at="2018-06-25T02:10:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testOne status=SUCCESS method=ExtentReportTest.testOne()[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813] output={null}]]]>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=onBoardBookingTestCases.Login()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureStatus -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="register" is-config="true" duration-ms="0" started-at="2018-06-09T00:14:09Z" finished-at="2018-06-09T00:14:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.facebook.features.ExtentReportTest.testThree()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="captureStatus" is-config="true" duration-ms="0" started-at="2018-06-09T00:14:09Z" finished-at="2018-06-09T00:14:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testThree status=SUCCESS method=ExtentReportTest.testThree()[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureStatus -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="cleanUp" is-config="true" duration-ms="605" started-at="2018-06-09T00:14:09Z" finished-at="2018-06-09T00:14:10Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb]" name="cleanUp" is-config="true" duration-ms="604" started-at="2018-06-25T02:10:26Z" finished-at="2018-06-25T02:10:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="testThree()[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="testThree" duration-ms="0" started-at="2018-06-09T00:14:09Z" finished-at="2018-06-09T00:14:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.facebook.features.ExtentReportTest@64c64813]" name="afterSuite" is-config="true" duration-ms="5028" started-at="2018-06-09T00:14:10Z" finished-at="2018-06-09T00:14:15Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-06-25T02:10:27Z" finished-at="2018-06-25T02:10:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.facebook.features.ExtentReportTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@148080bb]" name="tearDown" is-config="true" duration-ms="6875" started-at="2018-06-25T02:10:27Z" depends-on-methods="com.oba.testcases.onBoardBookingTestCases.afterSuite" finished-at="2018-06-25T02:10:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.oba.testcases.onBoardBookingTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

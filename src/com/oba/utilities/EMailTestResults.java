@@ -57,10 +57,8 @@ public class EMailTestResults {
 		Session session = Session.getDefaultInstance(props,
  
 				new javax.mail.Authenticator() {
- 
 					protected PasswordAuthentication getPasswordAuthentication() {
- 
-					return new PasswordAuthentication("GiveYourGMailID@gmail.com", "YourPassword");
+					return new PasswordAuthentication("qa.cust.onb@gmail.com", "OnBoardApp2018");
  
 					}
  
@@ -138,10 +136,14 @@ public class EMailTestResults {
 	
 	
 	public static void getEmailDetails( ) throws IOException {
+		String currentDir = System.getProperty("user.dir");
+		String eMailDetails = currentDir + "\\resources\\Configuration\\eMailDetails.properties";
+		System.out.println("EMail Details -> " + eMailDetails);
+		
 		System.out.println("Inside getEmailDetails");
-		to_Mail = GeneralUtilities.getValueOf("eMailDetails.properties", "to_Mail").trim();
-		cc_Mail = GeneralUtilities.getValueOf("eMailDetails.properties", "cc_Mail").trim();
-		mail_Body = GeneralUtilities.getValueOf("eMailDetails.properties", "mail_Body").trim();
+		to_Mail = GeneralUtilities.getValueOf(eMailDetails, "to_Mail").trim();
+		cc_Mail = GeneralUtilities.getValueOf(eMailDetails, "cc_Mail").trim();
+		mail_Body = GeneralUtilities.getValueOf(eMailDetails, "mail_Body").trim();
 		
 		System.out.println("to_Mail ->" + to_Mail);
 		System.out.println("cc_Mail ->" + cc_Mail);

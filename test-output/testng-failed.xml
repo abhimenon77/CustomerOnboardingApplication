@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.facebook.features.ExtentReportTest"/>
+      <class name="com.oba.testcases.onBoardBookingTestCases">
+        <methods>
+          <include name="setupExtentReports"/>
+          <include name="cleanUp"/>
+          <include name="Login"/>
+          <include name="loginToApp"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="register"/>
+          <include name="captureStatus"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.oba.testcases.onBoardBookingTestCases -->
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
