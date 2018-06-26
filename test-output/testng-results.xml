@@ -2,45 +2,40 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="LoginPage" duration-ms="1701" started-at="2018-06-25T02:50:49Z" finished-at="2018-06-25T02:50:51Z">
+  <suite name="LoginPage" duration-ms="2250" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:13Z">
     <groups>
     </groups>
-    <test name="Login with a Valid UserName and Valid Password" duration-ms="1177" started-at="2018-06-25T02:50:49Z" finished-at="2018-06-25T02:50:50Z">
+    <test name="Login with a Valid UserName and Valid Password_1" duration-ms="1119" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:12Z">
       <class name="com.oba.testcases.onBoardBookingTestCases">
-        <test-method status="PASS" signature="setupExtentReports()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@1e127982]" name="setupExtentReports" is-config="true" duration-ms="254" started-at="2018-06-25T02:50:49Z" finished-at="2018-06-25T02:50:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a]" name="setUp" is-config="true" duration-ms="15116" started-at="2018-06-26T16:46:55Z" finished-at="2018-06-26T16:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setupExtentReports()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a]" name="setupExtentReports" is-config="true" duration-ms="231" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtentReports -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@1e127982]" name="register" is-config="true" duration-ms="5" started-at="2018-06-25T02:50:50Z" finished-at="2018-06-25T02:50:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.oba.testcases.onBoardBookingTestCases.loginWithValidUserName() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="FAIL" signature="loginWithValidUserName()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@1e127982]" name="loginWithValidUserName" duration-ms="75" started-at="2018-06-25T02:50:50Z" finished-at="2018-06-25T02:50:50Z">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="FAIL" signature="loginWithValidUserName()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a]" name="loginWithValidUserName" duration-ms="63" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:11Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[The element reference of <iframe src="https://customeronboardapp.zendesk.com/auth/v2/login/signin?return_to=https%3A%2F%2Fcustomeronboardapp.zendesk.com%2F&theme=hc&locale=1&brand_id=360000829173&auth_origin=360000829173%2Cfalse%2Ctrue"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[Unable to locate element: //iframe[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ASUS-INDIA', ip: '192.168.2.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14428, moz:profile: C:\Users\Asus\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: bcb748c6-9d06-4621-a43b-c809ce699f8c]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4208, moz:profile: C:\Users\Asus\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e55b74ee-c19b-4a3f-8e7b-a59ffc909fca
+*** Element info: {Using=xpath, value=//iframe[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element reference of <iframe src="https://customeronboardapp.zendesk.com/auth/v2/login/signin?return_to=https%3A%2F%2Fcustomeronboardapp.zendesk.com%2F&theme=hc&locale=1&brand_id=360000829173&auth_origin=360000829173%2Cfalse%2Ctrue"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //iframe[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ASUS-INDIA', ip: '192.168.2.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 14428, moz:profile: C:\Users\Asus\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: bcb748c6-9d06-4621-a43b-c809ce699f8c
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4208, moz:profile: C:\Users\Asus\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e55b74ee-c19b-4a3f-8e7b-a59ffc909fca
+*** Element info: {Using=xpath, value=//iframe[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -51,7 +46,10 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:883)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
 at com.oba.testbase.TestBase.loginToApp(TestBase.java:108)
 at com.oba.testcases.onBoardBookingTestCases.loginWithValidUserName(onBoardBookingTestCases.java:72)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -76,38 +74,11 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidUserName -->
-        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@1e127982]" name="captureStatus" is-config="true" duration-ms="140" started-at="2018-06-25T02:50:50Z" finished-at="2018-06-25T02:50:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWithValidUserName status=FAILURE method=onBoardBookingTestCases.loginWithValidUserName()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@1e127982] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureStatus -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@1e127982]" name="cleanUp" is-config="true" duration-ms="663" started-at="2018-06-25T02:50:50Z" finished-at="2018-06-25T02:50:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- com.oba.testcases.onBoardBookingTestCases -->
-    </test> <!-- Login with a Valid UserName and Valid Password -->
-    <test name="Login with a Valid UserName and Valid Password_1" duration-ms="1701" started-at="2018-06-25T02:50:49Z" finished-at="2018-06-25T02:50:51Z">
-      <class name="com.oba.testcases.onBoardBookingTestCases">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca]" name="setUp" is-config="true" duration-ms="17563" started-at="2018-06-25T02:50:32Z" finished-at="2018-06-25T02:50:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setupExtentReports()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca]" name="setupExtentReports" is-config="true" duration-ms="254" started-at="2018-06-25T02:50:49Z" finished-at="2018-06-25T02:50:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupExtentReports -->
-        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca]" name="register" is-config="true" duration-ms="5" started-at="2018-06-25T02:50:50Z" finished-at="2018-06-25T02:50:50Z">
+        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a]" name="register" is-config="true" duration-ms="0" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:11Z">
           <params>
             <param index="0">
               <value>
@@ -118,34 +89,68 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method status="PASS" signature="loginWithValidUserName()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca]" name="loginWithValidUserName" duration-ms="1249" started-at="2018-06-25T02:50:50Z" finished-at="2018-06-25T02:50:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidUserName -->
-        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca]" name="captureStatus" is-config="true" duration-ms="0" started-at="2018-06-25T02:50:51Z" finished-at="2018-06-25T02:50:51Z">
+        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a]" name="captureStatus" is-config="true" duration-ms="163" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithValidUserName status=SUCCESS method=onBoardBookingTestCases.loginWithValidUserName()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithValidUserName status=FAILURE method=onBoardBookingTestCases.loginWithValidUserName()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureStatus -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca]" name="cleanUp" is-config="true" duration-ms="154" started-at="2018-06-25T02:50:51Z" finished-at="2018-06-25T02:50:51Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a]" name="cleanUp" is-config="true" duration-ms="633" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca]" name="tearDown" is-config="true" duration-ms="6688" started-at="2018-06-25T02:50:51Z" depends-on-methods="com.oba.testcases.onBoardBookingTestCases.afterSuite" finished-at="2018-06-25T02:50:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@335eadca]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-06-25T02:50:51Z" finished-at="2018-06-25T02:50:51Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-06-26T16:47:13Z" finished-at="2018-06-26T16:47:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@eec5a4a]" name="tearDown" is-config="true" duration-ms="7484" started-at="2018-06-26T16:47:13Z" depends-on-methods="com.oba.testcases.onBoardBookingTestCases.afterSuite" finished-at="2018-06-26T16:47:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.oba.testcases.onBoardBookingTestCases -->
     </test> <!-- Login with a Valid UserName and Valid Password_1 -->
+    <test name="Login with a Valid UserName and Valid Password" duration-ms="2250" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:13Z">
+      <class name="com.oba.testcases.onBoardBookingTestCases">
+        <test-method status="PASS" signature="setupExtentReports()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@2038ae61]" name="setupExtentReports" is-config="true" duration-ms="107" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtentReports -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@2038ae61]" name="register" is-config="true" duration-ms="16" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.oba.testcases.onBoardBookingTestCases.loginWithValidUserName() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="loginWithValidUserName()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@2038ae61]" name="loginWithValidUserName" duration-ms="1911" started-at="2018-06-26T16:47:11Z" finished-at="2018-06-26T16:47:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUserName -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@2038ae61]" name="cleanUp" is-config="true" duration-ms="185" started-at="2018-06-26T16:47:13Z" finished-at="2018-06-26T16:47:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="captureStatus(org.testng.ITestResult)[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@2038ae61]" name="captureStatus" is-config="true" duration-ms="0" started-at="2018-06-26T16:47:13Z" finished-at="2018-06-26T16:47:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithValidUserName status=SUCCESS method=onBoardBookingTestCases.loginWithValidUserName()[pri:0, instance:com.oba.testcases.onBoardBookingTestCases@2038ae61] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureStatus -->
+      </class> <!-- com.oba.testcases.onBoardBookingTestCases -->
+    </test> <!-- Login with a Valid UserName and Valid Password -->
   </suite> <!-- LoginPage -->
 </testng-results>
